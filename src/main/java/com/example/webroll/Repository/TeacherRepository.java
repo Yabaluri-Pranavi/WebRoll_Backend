@@ -1,5 +1,7 @@
 package com.example.webroll.Repository;
 
-public interface TeacherRepository<Teacher> extends JpaRepository<Teacher, Integer> {
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.example.webroll.Entity.Teacher;
 
+public interface TeacherRepository extends JpaRepository<Teacher, Integer> {
 }
