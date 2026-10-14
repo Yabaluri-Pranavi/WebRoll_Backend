@@ -1,4 +1,4 @@
-package com.example.webroll.util;
+package com.example.webroll;
 
 import java.util.Date;
 import java.nio.charset.StandardCharsets;

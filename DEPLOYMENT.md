@@ -38,3 +38,8 @@ permission to create and alter tables because Hibernate is configured with
 After the first successful deploy, check the Render logs for a successful
 database connection and use the Render service URL as the backend API base URL
 in the frontend configuration.
+
+Student passwords are stored as BCrypt hashes and are never included in student
+record API responses. Student sign-in uses the student's roll number and
+password. Student records created before password support do not have a
+password and cannot sign in until one is set.

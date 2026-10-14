@@ -1,6 +1,7 @@
 
 package com.example.webroll.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
@@ -15,7 +16,7 @@ public class Student {
 
     private String name;
     private String rollNumber;
-    private String email;
+    private String password;
 
     public Student() {}
 
@@ -43,11 +44,12 @@ public class Student {
         this.rollNumber = rollNumber;
     }
 
-    public String getEmail() {
-        return email;
+    @JsonIgnore
+    public String getPassword() {
+        return password;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
